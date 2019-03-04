@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Smart Helmet</title>
+    <link rel="stylesheet" type="text/css" href="/iot/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <script src="/iot/script.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#button').click(function(e) {  
+        var inputvalue = $("#input").val();
+        //window.location.replace("https://www.google.com/maps/dir/?api=1&origin=Low+Memorial+Library,New+York,NY+10027&destination="+inputvalue+"&travelmode=bicycling");
+        inputvalue = inputvalue.split(' ').join('+');
+        window.location.href = "http://guosl.com/direction/?destination="+inputvalue;
+    });
+});
+</script> 
+  <!-- Material Design Lite -->
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.blue-orange.min.css">
+
+  <!-- Material Design icon font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+    <ul class="nav">
+      <div class="special">
+        <a href="../iot" style="padding-left: 15px;">
+          Smart Helmet
+        </a>
+      </div>
+      <li><a href = "../direction/index.html">Navigation</a></li>
+    </ul>
+    <div class="banner">
+      <img class="banner-image" src="https://raw.githubusercontent.com/guoshanglin/iot/master/open-road-to-mountains-new.png">
+      <div class="banner-header" style="font-family: 'Merriweather', serif; font-size:300%; color: white;">Hello! Welcome to your portal!</div>
+      <div class="container">
+        <div class="container__item">
+            <input type="text" id="input" class="form__field" placeholder="Where would you like to go?">
+            <button type="button" id="button" class="btn btn--primary btn--inside uppercase">GO</button>
+        </div>
+      </div>
+    </div>
+    <div style = "position: absolute; left: 64px;">
+    	<!-- Square card -->
+    	<div class="mdl-card mdl-shadow--2dp demo-card-square">
+    		<div class="mdl-card__title mdl-card--expand">
+      			<h2 class="mdl-card__title-text">Trips</h2>
+      			<h2 id = "trip" value = " " style="font-family: 'Yellowtail', cursive; position: absolute;top: 30%;left: 40%;transform: translate(-30%, -35%);"></h2>
+    		</div>
+    		<div class="mdl-card__supporting-text">
+      		Your last trip was to battery park, NY
+    		</div>
+  		</div>
+  		<!-- Square card -->
+  		<div class="mdl-card mdl-shadow--2dp demo-card-square">
+    		<div class="mdl-card__title mdl-card__title mdl-card--expand">
+      		<h2 class="mdl-card__title-text">Travel distance</h2>
+      		<h2 id = "distance" value = " " style="font-family: 'Yellowtail', cursive; position: absolute;top: 30%;left: 40%;transform: translate(-30%, -30%);"></h2>
+    		</div>
+    		<div class="mdl-card__supporting-text">
+      		Your travel distance this month.
+    		</div>
+  		</div>
+  		<!-- Square card -->
+  		<div class="mdl-card mdl-shadow--2dp demo-card-square">
+    		<div class="mdl-card__title mdl-card--expand">
+      		<h2 class="mdl-card__title-text">Total duration</h2>
+      		<h2 id = "duration" value = " " style="font-family: 'Yellowtail', cursive; position: absolute;top: 30%;left: 40%;transform: translate(-30%, -40%);"></h2>
+    		</div>
+    		<div class="mdl-card__supporting-text">
+      		You have spent this much time bicycling!
+    		</div>
+  		</div>
+      <div class="mdl-card mdl-shadow--2dp demo-card-square">
+    		<div class="mdl-card__title mdl-card--expand">
+      		<h2 class="mdl-card__title-text">Total calories</h2>
+      		<h2 id = "calories" value = " " style="font-family: 'Yellowtail', cursive; position: absolute;top: 30%;left: 37%;transform: translate(-30%, -40%);"></h2>
+    		</div>
+    		<div class="mdl-card__supporting-text">
+      		You have burnt this much calories!
+    		</div>
+  		</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div style="position: absolute;left: 64px;" class="card card-1"><img style="height: 373px; overflow: hidden; width: 672px;" class="banner-image" src="https://raw.githubusercontent.com/guoshanglin/iot/master/plot_1.jpg"></div>
+    <div style="position: absolute;left: 768px;" class="card card-1"><img style="height: 373px; overflow: hidden; width: 672px;" class="banner-image" src="https://raw.githubusercontent.com/guoshanglin/iot/master/plot_2.jpg"></div>
+    <br>
+    <br>
+    <br>
+  </body>
+</html>

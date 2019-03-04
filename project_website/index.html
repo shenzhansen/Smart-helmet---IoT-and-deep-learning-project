@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html> 
+	<head>
+		<title>Columbia University EECS E4764 IoT Project Report #7</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<!-- <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span> -->
+							<h1 id="title">Smart Helmet</h1>
+							<p>Columbia University <br>
+								EECS E4764 Fall'18 Internet of Things<br>
+								Intelligent and Connected Systems<br>
+								Team 7 Project Report
+							</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Abstract</span></a></li>
+								<li><a href="#motivation" id="motivation-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Motivation</span></a></li>
+								<li><a href="#system" id="system-link" class="skel-layers-ignoreHref"><span class="icon fa-th">System</span></a></li>
+								<li><a href="#results" id="results-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Results</span></a></li>
+								<li><a href="#references" id="references-link" class="skel-layers-ignoreHref"><span class="icon fa-th">References</span></a></li>
+								<li><a href="#team" id="team-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Our Team</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+								<iframe width="600" height="400" src="https://www.youtube.com/embed/4iuHkNupYVk" frameborder="0" allowfullscreen></iframe>
+	
+								<h2 class="alt">Smart Helmet</h2>
+								<br>
+								<p>Our smart helmet is designed for cyclists that provides useful features and extra safety support. It employs cutting-edge navigation technology and state-of-the-art neural network object detection to steer the cyclists away from danger.</p>								
+
+							<footer>
+								<a href="#motivation" class="button scrolly">Motivation</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="motivation" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Motivation</h2>
+							</header>
+
+							<p align="left">● More and more people enjoy cycling because it is healthy and environmentally friendly;<br />● Bikes generally don’t offer mounting space for assistance devices or smartphone; <br />● Cyclists are interested in tracking their health status when considering cycling as a sport; <br />● Few bikes have rear view mirrors, and cyclists are unaware of the traffic behind unless purposely looking back, which imposes danger.</p>
+
+						</div>
+					</section>
+					
+					
+					<section id="system" class="three">
+						<div class="container">
+
+							<header>
+								<h2>System</h2>
+							</header>
+							
+							<h3 align="left">Architecture</h3>
+
+							<p align="left">The whole system mainly consists of three parts: <br />● The raspberry pi placed on top of the helmet provides voice interaction and navigation; the Google vision kit placed on the rear is incorporated to detect cars and provide safety warnings; a solar panel on top of the helmet provides the power. <br />● AWS server and database are running on the cloud to process and store client trip information and health statistics. <br />● All of the user formations can be visualized on our website: <a href="http://guosl.com/iot/">http://guosl.com/iot/</a>.</p>
+							<a href="#" align="center"><img src="images/system.jpg" style="width:500px;height:366px;" alt="" /></a>
+							<br>
+							<br>
+							
+							<h3 align="left">Technical Components</h3>
+
+							<br>
+							<p align="left">● Raspberry Pi is used as the main controller;<br />● User portal <a href="http://guosl.com/iot/">website</a> presents trip information and health statistics;<br />● Google API is used to provide audio navigation;<br />● User data is stored in a cloud database;<br />● Google vision kit is used to monitor the rear view;<br />● All components are powered by solar energy.</p>
+							
+							<h3 align="left">Prototype</h3>
+
+							<p align="left">We have developed a prototype for our smart helmet project as shown below. It provides most of the feature in our initial design. We have also made a custom case using 3D printing for the rearview camera and mounted it on the helmet. A solar power bank is placed on top of the helmet to provide power to both the raspberry pi and the rearview camera.</p>
+							<a href="#" align="center"><img src="images/helmet.jpg" style="width:645px;height:442px;" alt="" /></a>
+							
+							
+							
+						</div>
+					</section>
+					
+					
+					<section id="results" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Results</h2>
+							</header>
+
+							<p align="left"></p>
+
+
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/portal.png" alt="" /></a>
+								<header>
+									<h3>User portal presenting trip information and health statistics</h3>
+								</header>
+							</article>
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/direction.png" alt="" /></a>
+								<header>
+									<h3>Direction webpage and action buttons to send audio navigation to helmet or finish trip</h3>
+								</header>
+							</article>
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/response.jpg" alt="" /></a>
+								<header>
+									<h3>The audio response from the smart helmet</h3>
+								</header>
+							</article>
+							<article class="item">
+								<a href="#" class="image fit"><img src="images/car2.jpg" alt="" /></a>
+								<header>
+									<h3>Rearview vehicle detection (warnings are triggered if the size of the bounding box exceed certain threshold)</h3>
+								</header>
+							</article>
+							
+						</div>
+					</section>
+					
+					<section id="references" class="three">
+						<div class="container">
+
+							<header>
+								<h2>References</h2>
+							</header>
+
+							<p align="left">● AIY Vision Kit from Google. (n.d.). Retrieved from https://aiyprojects.withgoogle.com/vision/<br />● G. (2018, August 03). Google/aiyprojects-raspbian. Retrieved from https://github.com/google/aiyprojects-raspbian<br />● T. (2018, October 03). Tensorflow/models. Retrieved from https://github.com/tensorflow/models/tree/master/research/object_detection<br />● Google Map Platform. Retrieved from https://developers.google.com/maps/documentation/directions/intro</p>
+						</div>
+					</section>
+					
+
+				<!-- About Me -->
+					<section id="team" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Our Team</h2>
+							</header>
+
+							<!-- <a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a> -->
+
+
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a class="image fit"><img src="images/li.jpg" alt="" /></a>
+										<header>
+											<h3>Guanxuan Li</h3>
+											<p>M.S. candidate in Electrical Engineering | Concentration: Networks, Communications, Embedded Systems, Internet of Things. <br /><a href="https://www.linkedin.com/in/guanxuan-li/">My LinkedIn</a></p>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a class="image fit"><img src="images/guo.jpg" alt="" /></a>
+										<header>
+											<h3>Shanglin Guo</h3>
+											<p>MS student at Columbia University with extensive experience in embedded programming and hardware-software integrations. <br /><a href="https://www.linkedin.com/in/shanglin-guo/">My LinkedIn</a></p>
+
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a class="image fit"><img src="images/shen.jpg" alt="" /></a>
+										<header>
+											<h3>Zhansen Shen</h3>
+											<p>Electrical Engineer | Concentration: Machine learning and Internet of Things. <br /><a href="https://www.linkedin.com/in/zhansen-shen-307204174/">My LinkedIn</a></p>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p align="left">
+								<strong style = "display: inline-block; width: 200px;">Guanxuan Li:  </strong><a href="mailto:gl2619@columbia.edu">gl2619@columbia.edu</a></br>
+								<strong style = "display: inline-block; width: 200px;">Shanglin Guo: </strong><a href="mailto:sg3640@columbia.edu">sg3640@columbia.edu</a></br>
+								<strong style = "display: inline-block; width: 200px;">Zhansen Shen: </strong><a href="mailto:zs2390@columbia.edu">zs2390@columbia.edu</a></br>
+							</br>
+								<strong>Columbia University </strong><a href="http://www.ee.columbia.edu">Department of Electrical Engineering</a><br>
+								<!-- <strong>Class Website:</strong>
+									<a href="https://edblogs.columbia.edu/eecs4764-001-2018-3/">Columbia University EECS E4764 Fall '18 IoT</a></br> -->
+								<strong>Instructor:</strong> <a href="http://fredjiang.com/">Professor Xiaofan (Fred) Jiang</a>
+							</p>
+							
+
+							<!-- <form method="post" action="#">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form> -->
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; IoT Project | All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

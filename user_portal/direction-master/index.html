@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Direction</title>
+    <link rel="stylesheet" type="text/css" href="/direction/style.css"/>
+  </head>
+  <body>
+    <div id="floating-panel">
+      <strong>Start:</strong>
+      <button id="start" value="Low+Memorial+Library,New+York,NY+10027">Low Memorial Library</button>
+      <br>
+      <strong>End:</strong>
+      <button id="end" value="">Destination</button>
+    </div>
+    <div id="right-panel"></div>
+    <div id="map"></div>
+    <div id="left-corner">
+      <button class="btn" type="button" id="left-corner" onclick="leftFunction();"><span>Finish trip</span></button>
+    </div>
+    <div id="right-corner">
+      <button class="btn" type="button" id="right-corner" onclick="rightFunction();"><span>Sent to my helmet</span></button>
+    </div>
+    <script src="/direction/script.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDfHfNQqlb6EhaRJkEyZwKw59qMvkaYcE&callback=initMap">
+    </script>
+  </body>
+</html>
