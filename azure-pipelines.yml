@@ -4,11 +4,11 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 trigger:
-- master1
+- master
 
-pool:
+pol:
   vmImage: ubuntu-latest
-strategy:
+straegy:
   matrix:
     Python27:
       python.version: '2.7'
@@ -19,7 +19,7 @@ strategy:
     Python37:
       python.version: '3.7'
 
-steps:
+stps:
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '$(python.version)'
